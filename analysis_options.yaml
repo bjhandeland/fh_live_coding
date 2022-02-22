@@ -1,0 +1,31 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  strong-mode:
+    implicit-dynamic: false
+  errors:
+    # Treat missing required parameters as a warning (not a hint).
+    missing_required_param: warning
+    # Treat missing returns as a warning (not a hint).
+    missing_return: warning
+    # Allow having TODOs in the code.
+    todo: ignore
+  exclude:
+    - "lib/**/*.g.dart"
+    - "lib/**/config.example.dart"
+    - "lib/generated/*.dart"
+    - "lib/generated/**/*.dart"
+    - "**/*.mocks.dart"
+    - "ignored/*"
+
+linter:
+  rules:
+    # Additional rules that we use.
+    - always_declare_return_types
+    - always_specify_types
+    - flutter_style_todos
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_single_quotes
+    - sort_constructors_first
+    - sort_unnamed_constructors_first
