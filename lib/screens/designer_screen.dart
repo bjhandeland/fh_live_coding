@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
-/// Should show profile of Vital Lacerda.
+/// This screen does not work as intended.
 ///
-/// This screen is broken. Can you fix it?
+/// Should show a list of games, but there seem to be
+/// some rendering issues.
+///
+/// Refer to the [assets/designer.png] picture to see
+/// what the screen is supposed to look like.
 class DesignerScreen extends StatefulWidget {
   const DesignerScreen({Key? key}) : super(key: key);
 

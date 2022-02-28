@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
-/// Should show a list of games.
+/// This screen does not work as intended.
+///
+/// Should show a list of games, but there seem to be
+/// some rendering issues.
 ///
 /// Look at the code and comment on what you see.
 /// Is there anything you would change?
-///
-/// Later: clicking on "more" should take you to
-/// a "detail" page about a game. Use Hero widget
-/// on the picture for transition.
 class GamesScreen extends StatelessWidget {
   const GamesScreen({Key? key}) : super(key: key);
 

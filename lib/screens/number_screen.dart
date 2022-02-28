@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/// This screen does not work as intended.
+///
 /// Should add 0 to first row, 1 to second tow, 2 to third, and so on.
 ///
 /// Example:

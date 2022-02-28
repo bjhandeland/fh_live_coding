@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+/// This screen does not work as intended.
+///
 /// Should put [ColorWidget] on top of column and remove bottom [ColorWidget] from column.
 ///
 /// Example:
