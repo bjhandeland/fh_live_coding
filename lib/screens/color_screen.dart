@@ -16,7 +16,7 @@ class ColorScreen extends StatefulWidget {
   const ColorScreen({Key? key}) : super(key: key);
 
   @override
-  _ColorScreenState createState() => _ColorScreenState();
+  State<ColorScreen> createState() => _ColorScreenState();
 }
 
 class _ColorScreenState extends State<ColorScreen> {
@@ -28,11 +28,11 @@ class _ColorScreenState extends State<ColorScreen> {
 
     // Create list of first 5 colors.
     _colorWidgets = <Widget>[
-      ColorWidget(),
-      ColorWidget(),
-      ColorWidget(),
-      ColorWidget(),
-      ColorWidget(),
+      const ColorWidget(),
+      const ColorWidget(),
+      const ColorWidget(),
+      const ColorWidget(),
+      const ColorWidget(),
     ];
   }
 
@@ -56,8 +56,8 @@ class _ColorScreenState extends State<ColorScreen> {
         const SizedBox(height: 20.0),
 
         ElevatedButton(
-          child: const Text('do not dare'),
           onPressed: _onTap,
+          child: const Text('do not dare'),
         ),
       ],
     );
@@ -67,7 +67,7 @@ class _ColorScreenState extends State<ColorScreen> {
   // inserts a new ColorWidget on top.
   void _onTap() {
     _colorWidgets.removeLast();
-    _colorWidgets.insert(0, ColorWidget());
+    _colorWidgets.insert(0, const ColorWidget());
     setState(() {});
   }
 }
@@ -75,8 +75,10 @@ class _ColorScreenState extends State<ColorScreen> {
 // --------------------------------------------------------
 
 class ColorWidget extends StatefulWidget {
+  const ColorWidget({Key? key}) : super(key: key);
+
   @override
-  _ColorWidgetState createState() => _ColorWidgetState();
+  State<ColorWidget> createState() => _ColorWidgetState();
 }
 
 class _ColorWidgetState extends State<ColorWidget> {

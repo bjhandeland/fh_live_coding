@@ -14,7 +14,7 @@ class NumberScreen extends StatefulWidget {
   const NumberScreen({Key? key}) : super(key: key);
 
   @override
-  _NumberScreenState createState() => _NumberScreenState();
+  State<NumberScreen> createState() => _NumberScreenState();
 }
 
 class _NumberScreenState extends State<NumberScreen> {
@@ -40,8 +40,8 @@ class _NumberScreenState extends State<NumberScreen> {
         const SizedBox(height: 20.0),
 
         ElevatedButton(
-          child: const Text('do not dare'),
           onPressed: _onTap,
+          child: const Text('do not dare'),
         ),
       ],
     );
